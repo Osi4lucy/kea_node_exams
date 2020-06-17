@@ -1,0 +1,26 @@
+node_modules/
+
+<% if (errors) {%>
+<% errors.forEach(function(error){ %>
+      <div class="alert-danger">
+        <%= error.msg %>
+      </div>
+       <% )};%>
+ <% }%>
+
+<ul>
+  <% errors.forEach(function(error){ %>
+    <%-  {error: error}; %>
+  <% }); %>
+</ul>
+    
+
+    // new error\
+
+    <% if(errors) {%> 
+    <% errors.forEach{function(error) {%> 
+      <div class="alert-danger">
+        <%= error.msg  %> 
+      </div>
+    <% }); %> 
+  <%}%> 
